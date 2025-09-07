@@ -57,14 +57,14 @@ const App: React.FC = () => {
 
             <main>
               {/* Desktop Layout */}
-              <div className="hidden lg:block relative h-[960px] mb-16">
+              <div className="hidden lg:block relative h-[1080px] mb-16">
                 {/* Top: Thinks & Feels */}
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl">
                   <MapSection {...empathyMapData.thinksAndFeels} />
                 </div>
 
                 {/* Middle Row Container - Using Grid for robust spacing */}
-                <div className="absolute top-1/2 left-0 right-0 -translate-y-1/2 w-full grid grid-cols-[1fr_auto_1fr] items-center gap-x-8 xl:gap-x-12 px-4">
+                <div className="absolute top-1/2 left-0 right-0 -translate-y-1/2 w-full grid grid-cols-[1fr_auto_1fr] items-center gap-x-16 xl:gap-x-24 px-4">
                   {/* Left: Hears */}
                   <div className="justify-self-start">
                     <MapSection {...empathyMapData.hears} className="min-h-[420px] max-w-md" />
